@@ -3,255 +3,307 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/40662abc52.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ramseths</title>
 </head>
 
 <body>
-    <nav>
-        <div class="bar">
-            <div class="logo">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1655433217/new_loge_ma2xer.png" alt="Logo">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">Ramseths</a>
             </div>
-            <ul>
-                <li><a href="#experience" id="tag1">Experience</a></li>
-                <li><a href="#skills" id="tag2">Skills</a></li>
-                <li><a href="#project" id="tag3">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#about" id="tag4">About Me</a></li>
-            </ul>
-        </div>
-    </nav>
-    <section id="banner">
-        <div class="profile">
-            <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654541404/profile_cv_4_rumv30.jpg" alt="profile">
-        </div>
-        <div class="title">
-            <h1>Jesús Ramseths</h1>
-            <h2>Machine Learning Engineer</h2>
-            <h5 id="sub">Artificial Intelligence, Data Science, Machine Learning, Deep Learning, Reinforcement Learning & Computer Vision</h5>
-        </div>
-    </section>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Jesus Ramseths</span><br>AI/ML Engineer</h1>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/ramseths/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Ramseths" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654541404/profile_cv_4_rumv30.jpg" alt="">
+            </div>
+        </section>
 
 
-    <section id="experience">
-        <div class="head-title">
-            <h3 id="t1">Experience</h3>
-        </div>
-        <div class="cert-cat">
-            <div class="cert">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654609972/undraw_firmware_re_fgdy_t5jguh.svg" alt="huawei">
-                <p>Development of ML/DL algorithms</p>
-            </div>
-            <div class="cert">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654610099/undraw_feeling_proud_qne1_wizy64.svg" alt="huawei">
-                <p>Computer Vision Implementation</p>
-            </div>
-            <div class="cert">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654610171/undraw_programming_re_kg9v_wivcdk.svg" alt="huawei">
-                <p>Web Development</p>
-            </div>
-            <div class="cert">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654610870/undraw_add_information_j2wg_svzze5.svg" alt="huawei">
-                <p>Cloud Computing</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="skills">
-        <div class="head-title">
-            <h3>Skills</h3>
-        </div>
-        <div class="my-skills">
-            <div class="panel">
-                <div class="skill-tag">
-                    <div class="animated-progress progress-py">
-                        <span data-progress="80"></span>
-                    </div>
-                    <p>Python</p>
+        <section class="about section" id="experience">
+            <h2 class="section-title">Experience</h2>
+            <div class="card-cat bd-grid">
+                <div class="cert">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654609972/undraw_firmware_re_fgdy_t5jguh.svg" alt="huawei">
+                    <p>Artificial Intelligence</p>
                 </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-js">
-                        <span data-progress="80"></span>
-                    </div>
-                    <p>JavaScript</p>
+                <div class="cert">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654610099/undraw_feeling_proud_qne1_wizy64.svg" alt="huawei">
+                    <p>Computer Vision</p>
                 </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-net">
-                        <span data-progress="80"></span>
-                    </div>
-                    <p>HTML</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-fl">
-                        <span data-progress="80"></span>
-                    </div>
-                    <p>CSS</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-ja">
-                        <span data-progress="70"></span>
-                    </div>
-                    <p>Flutter & Dart</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-py">
-                        <span data-progress="60"></span>
-                    </div>
-                    <p>Keras</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-js">
-                        <span data-progress="70"></span>
-                    </div>
-                    <p>TensorFlow</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-net">
-                        <span data-progress="70"></span>
-                    </div>
-                    <p>Cloud Computing</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-fl">
-                        <span data-progress="70"></span>
-                    </div>
-                    <p>Firebase</p>
-                </div>
-                <div class="skill-tag">
-                    <div class="animated-progress progress-ja">
-                        <span data-progress="50"></span>
-                    </div>
-                    <p>R</p>
+                <div class="cert">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654610171/undraw_programming_re_kg9v_wivcdk.svg" alt="huawei">
+                    <p>Web Development</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="project">
-        <div class="head-title">
-            <h3>Projects</h3>
-        </div>
-        <div class="card-cat">
-            <div class="card">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654622396/undraw_medicine_b-1-ol_kkmccm.svg" alt="opt">
-                <div class="card-content">
-                    <p class="card-title">Diabetes Detector</p>
-                    <p class="card-subtitle">ML Mobile App</p>
-                    <div class="card-opt">
-                        <a href="https://github.com/Ramseths/diabetes_detector_tensorflow" target="_blank" class="btn">Code</a>
-                        <a href="https://drive.google.com/file/d/1Q249OU-Wa4Ow6zaEyl-peQEhX97RsMsn/view?usp=sharing" target="_blank" class="btn">Video</a>
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654911019/IMG_20220610_202807_jcfdcf.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Computer Systems Engineer specializing in Software Engineering</h2>
+                    <p class="about__text">I am a developer and passionate about Artificial Intelligence in topics of Computer Vision, Data Science, Computational Perception, NLP, Machine Learning, Deep Learning and Neuromorphic Computing apprentice.</p>
+                    <br>
+                    <p class="about__text">I have participated in national and international events, obtaining certifications with large companies such as <b>IBM, Microsoft, Huawei, NVIDIA, Santander</b>. In addition to being a speaker on various topics related to Artificial
+                        Intelligence.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Skills</h2>
+                    <p class="skills__text">Throughout my career I have developed my technical skills.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-python bx-flashing skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript bx-flashing skills__icon'></i>
+                            <span class="skills__name">JavaScript</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-css3 bx-flashing skills__icon'></i>
+                            <span class="skills__name">CSS</span>
+                        </div>
+                        <div class="skills__bar skills__css">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-html5 bx-flashing skills__icon'></i>
+                            <span class="skills__name">HTML 5</span>
+                        </div>
+                        <div class="skills__bar skills__html">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">80%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-flutter bx-flashing skills__icon'></i>
+                            <span class="skills__name">Flutter & Dart</span>
+                        </div>
+                        <div class="skills__bar skills__flutter">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-code bx-flashing skills__icon'></i>
+                            <span class="skills__name">TensorFlow</span>
+                        </div>
+                        <div class="skills__bar skills__flutter">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-google-cloud bx-flashing skills__icon'></i>
+                            <span class="skills__name">Cloud Computing</span>
+                        </div>
+                        <div class="skills__bar skills__flutter">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-firebase bx-flashing skills__icon'></i>
+                            <span class="skills__name">Firebase</span>
+                        </div>
+                        <div class="skills__bar skills__flutter">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654609972/undraw_firmware_re_fgdy_t5jguh.svg" alt="" class="skills__img">
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="card-cat bd-grid">
+                <div class="card">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654622396/undraw_medicine_b-1-ol_kkmccm.svg" alt="opt">
+                    <div class="card-content">
+                        <p class="card-title">Diabetes Detector</p>
+                        <p class="card-subtitle">ML Mobile App</p>
+                        <div class="card-opt">
+                            <a href="https://github.com/Ramseths/diabetes_detector_tensorflow" target="_blank" class="btn">Code</a>
+                            <a href="https://drive.google.com/file/d/1Q249OU-Wa4Ow6zaEyl-peQEhX97RsMsn/view?usp=sharing" target="_blank" class="btn">Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.researchgate.net/publication/343233188/figure/fig3/AS:917890010193921@1595853440484/Outline-of-ResNet-50-architecture-a-A-3-channel-image-input-layer-The-LL-LH-and-HH.jpg" alt="opt">
+                    <div class="card-content">
+                        <p class="card-title">Brain Tumor Detection</p>
+                        <p class="card-subtitle">Jupyter Notebook</p>
+                        <div class="card-opt">
+                            <a href="https://github.com/Ramseths/neuroevolution-r50" target="_blank" class="btn">Code</a>
+                            <a href="https://drive.google.com/file/d/1GnOU8DYXFCaVvU-wb0JRODZaGN9CO5iF/view?usp=sharing" target="_blank" class="btn">Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://d1sr9z1pdl3mb7.cloudfront.net/wp-content/uploads/2019/09/23152413/gesture-recognition-technology.jpg" alt="opt">
+                    <div class="card-content">
+                        <p class="card-title">Gesture Detection</p>
+                        <p class="card-subtitle">SSD MobileNet V2</p>
+                        <div class="card-opt">
+                            <a href="https://www.youtube.com/watch?v=uOYztTfCT5g&t=112s" target="_blank" class="btn">Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://keras.io/img/examples/generative/neural_style_transfer/neural_style_transfer_5_1.jpeg" alt="opt">
+                    <div class="card-content">
+                        <p class="card-title">Neural Style Transfer</p>
+                        <p class="card-subtitle">Jupyter Notebook</p>
+                        <div class="card-opt">
+                            <a href="https://github.com/Ramseths/neural_style_transfer" target="_blank" class="btn">Code</a>
+                            <a href="https://www.youtube.com/watch?v=GTbpXaV8peA" target="_blank" class="btn">Video</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654959047/portafolio2_wn2aw5.jpg" alt="opt">
+                    <div class="card-content">
+                        <p class="card-title">Air Data MX</p>
+                        <p class="card-subtitle">Jupyter Notebook</p>
+                        <div class="card-opt">
+                            <a href="https://github.com/BettySanchez7/AirDataMx" target="_blank" class="btn">Code</a>
+                            <a href="https://www.youtube.com/watch?v=g2xihmSNKBY&t=5s" target="_blank" class="btn">Video</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://www.researchgate.net/publication/343233188/figure/fig3/AS:917890010193921@1595853440484/Outline-of-ResNet-50-architecture-a-A-3-channel-image-input-layer-The-LL-LH-and-HH.jpg" alt="opt">
-                <div class="card-content">
-                    <p class="card-title">Brain Tumor Detection</p>
-                    <p class="card-subtitle">Jupyter Notebook</p>
-                    <div class="card-opt">
-                        <a href="https://github.com/Ramseths/neuroevolution-r50" target="_blank" class="btn">Code</a>
-                        <a href="https://drive.google.com/file/d/1GnOU8DYXFCaVvU-wb0JRODZaGN9CO5iF/view?usp=sharing" target="_blank" class="btn">Video</a>
-                    </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="certifications">
+            <h2 class="section-title">International Certifications</h2>
+
+            <div class="contact__container bd-grid cert-cat">
+                <div class="cert">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654959047/HCIA_oit1kj.png" alt="huawei">
+                    <p>HCIA Cloud Service</p>
+                </div>
+                <div class="cert">
+                    <img src="https://1000marcas.net/wp-content/uploads/2019/12/Huawei-Logo.png" alt="huawei">
+                    <p>HCIP Cloud Solutions Architect</p>
+                </div>
+                <div class="cert">
+                    <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654959047/azure_pqi4zn.png" alt="huawei">
+                    <p>Azure Fundamentals</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://d1sr9z1pdl3mb7.cloudfront.net/wp-content/uploads/2019/09/23152413/gesture-recognition-technology.jpg" alt="opt">
-                <div class="card-content">
-                    <p class="card-title">Gesture Detection</p>
-                    <p class="card-subtitle">SSD MobileNet V2</p>
-                    <div class="card-opt">
-                        <a href="https://www.youtube.com/watch?v=uOYztTfCT5g&t=112s" target="_blank" class="btn">Video</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://keras.io/img/examples/generative/neural_style_transfer/neural_style_transfer_5_1.jpeg" alt="opt">
-                <div class="card-content">
-                    <p class="card-title">Neural Style Transfer</p>
-                    <p class="card-subtitle">Jupyter Notebook</p>
-                    <div class="card-opt">
-                        <a href="https://github.com/Ramseths/neural_style_transfer" target="_blank" class="btn">Code</a>
-                        <a href="https://www.youtube.com/watch?v=GTbpXaV8peA" target="_blank" class="btn">Video</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654959047/portafolio2_wn2aw5.jpg" alt="opt">
-                <div class="card-content">
-                    <p class="card-title">Air Data MX</p>
-                    <p class="card-subtitle">Jupyter Notebook</p>
-                    <div class="card-opt">
-                        <a href="https://github.com/BettySanchez7/AirDataMx" target="_blank" class="btn">Code</a>
-                        <a href="https://www.youtube.com/watch?v=g2xihmSNKBY&t=5s" target="_blank" class="btn">Video</a>
-                    </div>
-                </div>
-            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1655432314/logotipe_qnhxxi.png" alt="">
         </div>
 
-    </section>
-
-    <section id="about">
-        <div class="head-title">
-            <h3>About me</h3>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/ramseths/" target="_blank" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Ramseths" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
         </div>
-        <div class="about-info">
-            <p>My name is Jesus Ramseths, I am a Computer Systems Engineer specializing in Software Engineering, I focused my profile to the area of artificial intelligence, obtaining knowledge in Machine Learning, Computer Vision and the application in
-                Data Science. I am a self-taught person who is constantly learning, I also like to teach, I have participated in conferences as a speaker and in workshops as an instructors. In addition, I have participated in the development of Artificial
-                Intelligence projects, one of them was my thesis for the detection of the COVID-19 virus in chest X-rays. In my work experience, I developed IoT projects within the university where I studied, I was a high school math teacher and I was
-                a machine learning intern. </p>
-            <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654911019/IMG_20220610_202807_jcfdcf.jpg" alt="profile">
-        </div>
-    </section>
-
-    <section id="certifications">
-        <div class="head-title">
-            <h3 id="t1">International Certifications</h3>
-        </div>
-        <div class="cert-cat">
-            <div class="cert">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654959047/HCIA_oit1kj.png" alt="huawei">
-                <p>HCIA Cloud Service</p>
-            </div>
-            <div class="cert">
-                <img src="https://1000marcas.net/wp-content/uploads/2019/12/Huawei-Logo.png" alt="huawei">
-                <p>HCIP Cloud Solutions Architect</p>
-            </div>
-            <div class="cert">
-                <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1654959047/azure_pqi4zn.png" alt="huawei">
-                <p>Azure Fundamentals</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="logo">
-            <img src="https://res.cloudinary.com/jesusramseths/image/upload/v1655433217/new_loge_ma2xer.png" alt="Logo">
-        </div>
-        <p>Ramseths. 2022</p>
-        <div class="social">
-            <a href="https://www.linkedin.com/in/ramseths/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
-            <a href="https://github.com/Ramseths" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
-        </div>
+        <p>&#169; 2022</p>
     </footer>
 
 
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <script type="text/javascript">
-        $(".animated-progress span").each(function() {
-            $(this).animate({
-                    width: $(this).attr("data-progress") + "%",
-                },
-                1000
-            );
-            $(this).text($(this).attr("data-progress") + "%");
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
