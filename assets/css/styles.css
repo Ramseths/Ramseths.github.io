@@ -442,6 +442,11 @@ img {
     width: 70%;
 }
 
+.skills__imgd {
+    display: flex;
+    justify-content: center;
+}
+
 .skills__img {
     border-radius: .5rem;
 }
