@@ -56,3 +56,14 @@ sr.reveal('.card', { interval: 200 });
 
 /*SCROLL CERT*/
 sr.reveal('.cert', { interval: 200 });
+
+
+/*Preloader*/
+let preloader = document.querySelector('.preloader');
+setTimeout(function() {
+    preloader.style.display = "none";
+}, 4000);
+
+window.addEventListener('load', () => {
+    preloader.style.display = "none";
+});
