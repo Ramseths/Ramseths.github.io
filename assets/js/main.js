@@ -62,7 +62,7 @@ sr.reveal('.cert', { interval: 200 });
 let preloader = document.querySelector('.preloader');
 setTimeout(function() {
     preloader.style.display = "none";
-}, 4000);
+}, 8000);
 
 window.addEventListener('load', () => {
     preloader.style.display = "none";
