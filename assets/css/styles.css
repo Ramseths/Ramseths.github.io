@@ -438,23 +438,23 @@ img {
 }
 
 .skills__html {
-    width: 80%;
+    width: 100%;
 }
 
 .skills__css {
-    width: 80%;
+    width: 100%;
 }
 
 .skills__js {
-    width: 80%;
+    width: 100%;
 }
 
 .skills__ux {
-    width: 85%;
+    width: 100%;
 }
 
 .skills__flutter {
-    width: 70%;
+    width: 100%;
 }
 
 .skills__imgd {
@@ -743,6 +743,10 @@ img {
     padding: 10px 10px;
     width: 100%;
     height: 100%;
+}
+
+.databricks img {
+    padding: 10px 40px;
 }
 
 .cert p {
